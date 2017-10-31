@@ -3,7 +3,7 @@
  */
 export default (fn) => {
   if(typeof fn !== 'function') {
-    throw new TypeError(`util.promisify: ${fn} is not function!`)
+    throw new TypeError(`promisify: ${fn} is not function!`)
   }
   return (...args) => {
     let self = this
