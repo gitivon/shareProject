@@ -4,7 +4,7 @@ import {
 } from './fn'
 
 try{
-  doSomethingCallback(doSomethingElse)
+  doSomething(doSomethingElse)
 }catch(e) {
   console.log('catch error: ', e.message)
 }

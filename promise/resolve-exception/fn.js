@@ -5,7 +5,6 @@ export const doSomething = callback => new Promise(resolve => {
   }, 100);
 })
 
-export const doSomethingElse = callback => new Promise(resolve => {
+export const doSomethingElse = () => {
   throw new Error('error in doSomethingElse');
-  resolve();
-})
+}
