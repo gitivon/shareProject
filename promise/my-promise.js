@@ -1,5 +1,6 @@
 import { EventEmitter } from 'events'
 
+// 简单实现一个自己的 Promise 类
 class MyPromise {
 
   constructor (fn) {
