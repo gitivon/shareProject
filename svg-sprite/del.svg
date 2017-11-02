@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>删除@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="填写订单" transform="translate(-14.000000, -397.000000)" fill="#FF5500">
+            <g id="儿童票信息" transform="translate(0.000000, 363.000000)">
+                <g id="删除" transform="translate(12.000000, 32.000000)">
+                    <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 L12,22 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 L12,21 Z M16.5,11.5 C16.7761424,11.5 17,11.7238576 17,12 C17,12.2761424 16.7761424,12.5 16.5,12.5 L7.5,12.5 C7.22385763,12.5 7,12.2761424 7,12 C7,11.7238576 7.22385763,11.5 7.5,11.5 L16.5,11.5 Z" id="delete"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

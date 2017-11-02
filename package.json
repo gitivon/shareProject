@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gitivon/shareProject#readme",
   "devDependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "gulp-svg-symbols": "^2.0.2"
   }
 }
