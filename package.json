@@ -18,6 +18,7 @@
   "homepage": "https://github.com/gitivon/shareProject#readme",
   "devDependencies": {
     "bluebird": "^3.5.1",
+    "gulp-svg-sprites": "^4.1.2",
     "gulp-svg-symbols": "^2.0.2"
   }
 }

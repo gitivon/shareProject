@@ -41,11 +41,13 @@ class MyPromise {
 }
 
 const timeout = timer => new MyPromise((resolve, reject) => {
-  throw new Error('报错啦')
+  // throw new Error('报错啦')
   setTimeout(resolve, timer)
 })
 
 console.log('start')
-timeout(2000).then(e => {
+const timeoutEvent = timeout(2000)
+
+timeoutEvent.then(e => {
   console.log(`2000ms gone`);
 })

@@ -1,9 +1,14 @@
 var gulp = require('gulp');
-var svgSymbols = require('gulp-svg-symbols');
+var svgSprite = require('gulp-svg-sprites');
 
 gulp.task('svg', function() {
   return gulp.src('./svg-sprite/*.svg')
-    .pipe(svgSymbols())
+    .pipe(svgSprite({
+      mode: 'symbols',
+      preview: {
+        sprite: "index.html"
+      }
+    }))
     .pipe(gulp.dest('svg-sprite/svgs'))
 })
 
