@@ -156,10 +156,6 @@
 <body>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
 	
-		<symbol id="all" viewBox="0 0 20 40">
-			
-		</symbol>
-	
 		<symbol id="checked" viewBox="0 0 22 22">
 			<title>小图标/勾选框/已勾选</title><g transform="translate(-1 -1)" fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><rect fill="#2DBB55" x="1" y="1" width="22" height="22" rx="2"></rect><path d="M4.353 12.61a.62.62 0 0 1-.06-.765l.28-.38a.489.489 0 0 1 .686-.097l3.079 2.36c.437.335 1.136.32 1.56-.034l8.856-7.377a.558.558 0 0 1 .732.03l.162.16a.486.486 0 0 1-.01.704l-9.795 9.64a.983.983 0 0 1-1.405-.014L4.353 12.61z" fill="#FFF"></path></g>
 		</symbol>
@@ -171,7 +167,7 @@
 </svg>
 
 <header>
-    <h1 id="logo">Gulp SVG Sprites <small>(3 icons in &lt;symbol&gt; mode)</small></h1>
+    <h1 id="logo">Gulp SVG Sprites <small>(2 icons in &lt;symbol&gt; mode)</small></h1>
     <h4>Files Generated:</h4>
     <ol>
         <li><a href="svg/symbols.svg">svg/symbols.svg</a></li>
@@ -189,23 +185,6 @@
 </header>
 <section>
     <ul class="icon-boxes">
-        
-
-        <li title="all">
-            <div class="icon-box" id="icon-box-all">
-                <svg class="icon all">
-                    <use xlink:href="#all" />
-                </svg>
-            </div>
-            <h2>all</h2>
-            <button onclick="showPopover('snippet-all')">Show Snippet</button>
-            <br/>
-            <button onclick="invertBackground('icon-box-all')">Invert Background</button>
-            <div class="snippet-popover" id="snippet-all">
-                <pre><code>&lt;svg class=&quot;icon all&quot;&gt;&lt;use xlink:href=&quot;#all&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
-                <button onclick="hidePopover()">Close</button>
-            </div>
-        </li>
         
 
         <li title="checked">

@@ -1,14 +1,5 @@
 import Tween from './plugins/tween'
-
-// 兼容处理 requestAnimationFrame
-if (!('requestAnimationFrame' in window)) {
-  console.info('requestAnimationFrame not support in your browser, use setTimeout.')
-  requestAnimationFrame = function(fn) {
-    setTimeout(fn, 17)
-  }	
-}
-
-const raf = () => new Promise(resolve => requestAnimationFrame(resolve))
+import { frameTick } from './common'
 
 /*
  */
@@ -19,7 +10,7 @@ class GtTween {
   * c: change in value（变化量）；
   * TweenFn: Tween 函数 ；
   */
-  constructor (b, c, TweenFn = Tween.Quad.easeIn) {
+  constructor (b, c, TweenFn = Tween.Quad.easeInOut) {
     this.b = b
     this.c = c
     this.val = 0
@@ -37,7 +28,7 @@ class GtTween {
       if(fn(v) === false){
         throw new Error('requestAnimationFrame is stop')
       } else {
-        this.val = await raf() - this.start
+        this.val = await frameTick() - this.start
         if(this.val - this.start <= this.d)
           await this._step(fn)
       }
@@ -59,7 +50,7 @@ class GtTween {
 
 }
 
-const Animate = (b, c) => new GtTween(b, c)
+const Animate = (b, c, Tween) => new GtTween(b, c, Tween)
 
 export default Animate
 export { Tween, Animate, GtTween }
