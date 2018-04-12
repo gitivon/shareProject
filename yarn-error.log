@@ -1,0 +1,59 @@
+Arguments: 
+  /Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin/node /Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin/yarn add @ivon/decorators -S
+
+PATH: 
+  /Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643@global/bin:/Users/huaqingfeng/.rvm/rubies/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643@global/bin:/Users/huaqingfeng/.rvm/rubies/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "shares",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gitivon/shareProject.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/gitivon/shareProject/issues"
+    },
+    "homepage": "https://github.com/gitivon/shareProject#readme",
+    "devDependencies": {
+      "bluebird": "^3.5.1",
+      "gulp-svg-sprites": "^4.1.2",
+      "gulp-svg-symbols": "^2.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@ivon%2fdecorators: Not found
+      at Request.params.callback [as _callback] (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:65019:18)
+      at Request.self.callback (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:132430:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:133413:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:133333:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
