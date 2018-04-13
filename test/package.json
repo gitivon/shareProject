@@ -11,12 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@gitivon/decorators": "^1.0.3",
     "babel-plugin-transform-decorators": "^6.24.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-env": "^1.6.1"
   },
   "devDependencies": {
+    "@gitivon/decorators": "^1.0.5",
     "babel-cli": "^6.26.0",
     "ts-node": "^5.0.1",
     "typescript": "^2.8.1"
