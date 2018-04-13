@@ -1,8 +1,9 @@
-import { once } from "../decorators/src";
+import { once, sleep } from "../decorators/src";
 
 class A {
   public b?: number;
 
+  @sleep(1000)
   @once()
   async test() {
     console.log('exec', this);
