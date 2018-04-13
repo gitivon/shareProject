@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@gitivon/decorators@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@gitivon/decorators/-/decorators-1.0.5.tgz#a39bb2526ad8792d91c75505e22667d41a27d721"
+"@gitivon/decorators@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@gitivon/decorators/-/decorators-1.0.6.tgz#5bd89767533ab1783bb948687abe9be0c741b0b3"
 
 abbrev@1:
   version "1.1.1"

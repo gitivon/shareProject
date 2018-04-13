@@ -16,7 +16,7 @@
     "babel-preset-env": "^1.6.1"
   },
   "devDependencies": {
-    "@gitivon/decorators": "^1.0.5",
+    "@gitivon/decorators": "^1.0.6",
     "babel-cli": "^6.26.0",
     "ts-node": "^5.0.1",
     "typescript": "^2.8.1"
