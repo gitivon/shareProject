@@ -16,6 +16,6 @@ class A {
   await a.test();
   await a.test();
 
-  console.log(a)
+  // console.log(a)
 
 })()

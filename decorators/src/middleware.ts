@@ -13,12 +13,12 @@ const MethodDecoratorMiddlewave = (
   fn: (next: () => Promise<any>) => any
 ) => {
   const oldValue = descriptor.value;
-  descriptor.value = async function(...args: any[]): Promise<any[]> {
+  descriptor.value = function(...args: any[]): Promise<any[]> {
     // 注意这里不能改成箭头函数，this 指向问题
-    const next = async () => {
-      return await oldValue.apply(this, args);
+    const next = () => {
+      return oldValue.apply(this, args);
     };
-    return await fn(next);
+    return fn(next);
   };
   return descriptor;
 };
