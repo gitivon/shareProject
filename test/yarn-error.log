@@ -1,14 +1,14 @@
 Arguments: 
-  /Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin/node /Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin/yarn dev
+  /usr/local/Cellar/node/9.5.0/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js add @ivon/decorators -D
 
 PATH: 
-  /Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643@global/bin:/Users/huaqingfeng/.rvm/rubies/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.nvm/versions/node/v8.9.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/gems/ruby-2.0.0-p643@global/bin:/Users/huaqingfeng/.rvm/rubies/ruby-2.0.0-p643/bin:/Users/huaqingfeng/.rvm/bin
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 Yarn version: 
-  1.5.1
+  1.3.2
 
 Node version: 
-  8.9.3
+  9.5.0
 
 Platform: 
   darwin x64
@@ -21,6 +21,7 @@ npm manifest:
     "main": "index.js",
     "scripts": {
       "dev": "babel-node ./index.js",
+      "ts": "ts-node ./index.ts",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -32,7 +33,9 @@ npm manifest:
       "babel-preset-env": "^1.6.1"
     },
     "devDependencies": {
-      "babel-cli": "^6.26.0"
+      "babel-cli": "^6.26.0",
+      "ts-node": "^5.0.1",
+      "typescript": "^2.8.1"
     }
   }
 
@@ -67,6 +70,12 @@ Lockfile:
     version "2.2.1"
     resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
   
+  ansi-styles@^3.2.1:
+    version "3.2.1"
+    resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
+    dependencies:
+      color-convert "^1.9.0"
+  
   anymatch@^1.3.0:
     version "1.3.2"
     resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.2.tgz#553dcb8f91e3c889845dfdba34c77721b90b9d7a"
@@ -98,6 +107,10 @@ Lockfile:
   array-unique@^0.2.1:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.2.1.tgz#a1d97ccafcbc2625cc70fadceb36a50c58b01a53"
+  
+  arrify@^1.0.0:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   
   asn1@~0.2.3:
     version "0.2.3"
@@ -719,6 +732,14 @@ Lockfile:
       strip-ansi "^3.0.0"
       supports-color "^2.0.0"
   
+  chalk@^2.3.0:
+    version "2.3.2"
+    resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
+    dependencies:
+      ansi-styles "^3.2.1"
+      escape-string-regexp "^1.0.5"
+      supports-color "^5.3.0"
+  
   chokidar@^1.6.1:
     version "1.7.0"
     resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
@@ -741,6 +762,16 @@ Lockfile:
   code-point-at@^1.0.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+  
+  color-convert@^1.9.0:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.1.tgz#c1261107aeb2f294ebffec9ed9ecad529a6097ed"
+    dependencies:
+      color-name "^1.1.1"
+  
+  color-name@^1.1.1:
+    version "1.1.3"
+    resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   
   combined-stream@^1.0.5, combined-stream@~1.0.5:
     version "1.0.6"
@@ -812,6 +843,10 @@ Lockfile:
     version "1.0.3"
     resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   
+  diff@^3.1.0:
+    version "3.5.0"
+    resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
+  
   ecc-jsbn@~0.1.1:
     version "0.1.1"
     resolved "https://registry.yarnpkg.com/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz#0fc73a9ed5f0d53c38193398523ef7e543777505"
@@ -822,7 +857,7 @@ Lockfile:
     version "1.3.42"
     resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.42.tgz#95c33bf01d0cc405556aec899fe61fd4d76ea0f9"
   
-  escape-string-regexp@^1.0.2:
+  escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
     version "1.0.5"
     resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   
@@ -995,6 +1030,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
     dependencies:
       ansi-regex "^2.0.0"
+  
+  has-flag@^3.0.0:
+    version "3.0.0"
+    resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   
   has-unicode@^2.0.0:
     version "2.0.1"
@@ -1201,6 +1240,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.3.1.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
     dependencies:
       js-tokens "^3.0.0"
+  
+  make-error@^1.1.1:
+    version "1.3.4"
+    resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.4.tgz#19978ed575f9e9545d2ff8c13e33b5d18a67d535"
   
   micromatch@^2.1.5:
     version "2.3.11"
@@ -1549,9 +1592,19 @@ Lockfile:
     dependencies:
       source-map "^0.5.6"
   
+  source-map-support@^0.5.3:
+    version "0.5.4"
+    resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.4.tgz#54456efa89caa9270af7cd624cc2f123e51fbae8"
+    dependencies:
+      source-map "^0.6.0"
+  
   source-map@^0.5.6, source-map@^0.5.7:
     version "0.5.7"
     resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+  
+  source-map@^0.6.0:
+    version "0.6.1"
+    resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   
   sshpk@^1.7.0:
     version "1.14.1"
@@ -1599,6 +1652,12 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   
+  supports-color@^5.3.0:
+    version "5.3.0"
+    resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.3.0.tgz#5b24ac15db80fa927cf5227a4a33fd3c4c7676c0"
+    dependencies:
+      has-flag "^3.0.0"
+  
   tar-pack@^3.4.0:
     version "3.4.1"
     resolved "https://registry.yarnpkg.com/tar-pack/-/tar-pack-3.4.1.tgz#e1dbc03a9b9d3ba07e896ad027317eb679a10a1f"
@@ -1634,6 +1693,19 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   
+  ts-node@^5.0.1:
+    version "5.0.1"
+    resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-5.0.1.tgz#78e5d1cb3f704de1b641e43b76be2d4094f06f81"
+    dependencies:
+      arrify "^1.0.0"
+      chalk "^2.3.0"
+      diff "^3.1.0"
+      make-error "^1.1.1"
+      minimist "^1.2.0"
+      mkdirp "^0.5.1"
+      source-map-support "^0.5.3"
+      yn "^2.0.0"
+  
   tunnel-agent@^0.6.0:
     version "0.6.0"
     resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
@@ -1643,6 +1715,10 @@ Lockfile:
   tweetnacl@^0.14.3, tweetnacl@~0.14.0:
     version "0.14.5"
     resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
+  
+  typescript@^2.8.1:
+    version "2.8.1"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.1.tgz#6160e4f8f195d5ba81d4876f9c0cc1fbc0820624"
   
   uid-number@^0.0.6:
     version "0.0.6"
@@ -1683,19 +1759,20 @@ Lockfile:
   wrappy@1:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  
+  yn@^2.0.0:
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c babel-node ./index.js
-  Directory: /Users/huaqingfeng/others/htdocs/github/shareProject/test
-  Output:
-  
-      at ProcessTermError.MessageError (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/Users/huaqingfeng/.nvm/versions/node/v8.9.3/lib/node_modules/yarn/lib/cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: https://registry.yarnpkg.com/@ivon%2fdecorators: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:62098:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:123085:22)
+      at Request.emit (events.js:160:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:124068:10)
+      at Request.emit (events.js:160:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:123988:12)
+      at Object.onceWrapper (events.js:255:19)
+      at IncomingMessage.emit (events.js:165:20)
+      at endReadableNT (_stream_readable.js:1101:12)
+      at process._tickCallback (internal/process/next_tick.js:152:19)
